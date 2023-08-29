@@ -1,0 +1,36 @@
+{
+    "notes": [
+        {
+            "title": "Biologia",
+            "file": "biology",
+            "tags": [
+                "inutile",
+                "biologia"
+            ]
+        },
+        {
+            "title": "Chimica",
+            "file": "chemistry",
+            "tags": [
+                "inutile",
+                "chimica"
+            ]
+        },
+        {
+            "title": "Storia",
+            "file": "history",
+            "tags": [
+                "inutile",
+                "storia"
+            ]
+        },
+        {
+            "title": "English",
+            "file": "english",
+            "tags": [
+                "inutile",
+                "english"
+            ]
+        }
+    ]
+}
