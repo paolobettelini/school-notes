@@ -31,6 +31,20 @@
                 "inutile",
                 "english"
             ]
-        }
+        },
+        {
+            "title": "Italiano",
+            "file": "italiano",
+            "tags": [
+                "inutile", "italiano"
+            ]
+        },
+        {
+          "title": "fisica",
+          "file": "fisica",
+          "tags": [
+            "inutile", "fisica"
+        ]
+      }
     ]
 }
