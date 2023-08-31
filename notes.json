@@ -40,11 +40,18 @@
             ]
         },
         {
-          "title": "fisica",
+          "title": "Fisica",
           "file": "fisica",
           "tags": [
-            "inutile", "fisica"
-        ]
-      }
+                "inutile", "fisica"
+            ]
+        },
+        {
+            "title": "Geografia",
+            "file": "geografia",
+            "tags": [
+                "inutile", "geografia"
+            ]
+        }    
     ]
 }
