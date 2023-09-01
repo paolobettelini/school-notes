@@ -5,6 +5,7 @@
 \usepackage{parskip}
 \usepackage{fullpage}
 \usepackage{hyperref}
+\usepackage[backend=bibtex]{biblatex}
 
 \hypersetup{
     colorlinks=true,
@@ -13,6 +14,8 @@
     pdftitle={Chemistry},
     pdfpagemode=FullScreen,
 }
+
+\addbibresource{./references.bib}
 
 \title{Chemistry}
 \author{Paolo Bettelini}
@@ -24,19 +27,48 @@
 \tableofcontents
 \pagebreak
 
-\section{Definition}
-
-% comprare
 % 978.88.08.72527.1
 % CHIMICA.BLU J.Brady
 
-%compito giovedì 1 foglio con scritto
-% nome, cosa mi aspetto dal corso
-% perché e cosa voglio ultimo libro che ho letto
-% libro consiglio e perché
+\section{Isotopi dell'idrogeno}
 
-% compito: cercare esperi / pubblicazioni
-% sull'es ghiaccio diverso. Dimostrare in teoria
-%l'ipotesi corretta
+Il primo isotopo dell'idrogeno è il \textit{deuterio}, indicato con \(D\) o \(^2H\).
+A differenza dell'idrogeno comune, il deuterio possiede un neutrone nel nucleo oltre al protone.
+A causa di questa caratteristica, il deuterio ha una massa atomica leggermente superiore rispetto all'idrogeno normale.
+Il deuterio è utilizzato in varie applicazioni, come nei reattori nucleari per la produzione di energia e come tracciatore in studi scientifici e biologici. 
+
+Il secondo isotopo dell'idrogeno è è il trizio, indicato con \(T\) o \(^3H\).
+A differenza dell'idrogeno comune, il deuterio possiede due neutroni nel nucleo oltre al protone.
+A causa di questa composizione nucleare, il trizio ha una massa atomica maggiore rispetto agli altri isotopi dell'idrogeno.
+Il trizio è radioattivo e decade nel tempo con una emivita di circa 12,3 anni, emettendo particelle beta.
+
+\subsection{Acqua con deuterio e trizio}
+
+È possibile ottenere dell'acqua, \(H_2O\), utilizzando gli isotopi \(D\) e \(T\) al posto di \(H\).
+
+Queste sostanze sono chiamate \textit{acqua pesante} (\(D_2O\)) e
+\textit{acqua superpesante} (\(T_2O\)).
+
+\begin{center}
+    \bgroup{}
+    \def\arraystretch{1.25}
+    \begin{tabular}{ |c|c|c|c| }
+        \hline
+        & \textbf{Acqua} & \textbf{Acqua pesante} & \textbf{Acqua Superpesante} \\
+        \hline
+        \textbf{Liquido (g/cm3)} & 0.997 & 1.11 & 1.20 \\
+        \hline
+        \textbf{Solido (g/cm3)} & 0.9168 & 1.105 & ? \\
+        \hline
+    \end{tabular}
+    \egroup{}
+\end{center}
+
+Possiamo quindi notare come la versione solida dell'acqua pesante galleggi
+nell'acqua normale \cite{deuterated-water}.
+
+\nocite{*} % cite all entries
+
+\printbibliography
 
 \end{document}
