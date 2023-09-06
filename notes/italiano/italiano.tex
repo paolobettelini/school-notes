@@ -7,6 +7,10 @@
 \usepackage{hyperref}
 \usepackage{stellar}
 \usepackage{soul}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\usetikzlibrary{cd}
 
 \hypersetup{
     colorlinks=true,
@@ -47,6 +51,8 @@
 % Verifiche:
 % 11 ott, Dante 
 % 6 dic, Boccaccio(?)
+
+% TODO, spostare definizioni in un punto apposta
 
 
 
@@ -190,7 +196,283 @@ Questo è dato dal fatto che lo spirito può vedere, ma ha l'impossibilità di e
 Questa separazione è collegata dall'uso di due parole quasi uguali,
 \textbf{mira} e \textbf{Vedela} (detto per anadiplosi).
 
+% TODO atoni e tonici
+
+\sdefinition{Legge di Tobler Mussafia}{
+    È vietato iniziare un verso (poesie o prosa) o far seguire una congiunzione coordinante
+    con un pronome atoni.
+}
+
 \section{La Divina Commedia}
+
+\subsection{Cosmo Dantesco}
+
+\sdefinition{Sistema tolemaico}{
+    Data la credenza creazionista, Dio ha creato l'uomo e l'ha collocato al centro.
+    Per cui, la Terra risiede al centro del sistema solare, dove gli altri pianeti gli ruotano attorno.
+}
+
+Le colonne d'Ercole (Stretto di Gibilterra) e La foce del Gange
+sono i due estremi della Terra. All'uomo non è concesso conoscere oltre questi confini
+(fare ciò implicherebbe peccare di superbia).
+
+Gerusalemme si trova al centro dell'emisfero. Sotto di esso, risiede l'inferno.
+
+Lucifero era l'angelo prediletto di Dio.
+Lucifero si ribella a Dio, e per punizione viene scagliato sulla Terra, la quale,
+prova ribrezzo e si ritira formando la forma conica dell'inferno. Lucifero si trova nel punto
+più profondo dell'inferno, ossia il centro della Terra, nonché il punto più lontano da Dio.
+
+La creazione dell'inferno crea una montagna dall'altra parte del mondo, dove in cima ad esso
+vi è il Giardino dell'Eden. Ciò marca anche la creazione del purgatorio.
+
+\subsection{L'inferno}
+
+L'inferno è composto da settori sempre più stretti. Più lo spazio diminuisce e più i peccati sono immorali
+secondo Date.
+Principalmente, l'inferno è suddiviso in 3 sezioni.
+Dall'alto verso il basso, ci sono gli \textit{incontinenti}, \textit{violenti} e
+i \textit{freudolenti}.
+
+\sdefinition{Legge del contrappasso}{
+    La \textit{legge del contrappasso} associa una pena
+    legata alla colpa.
+    Il nesso avviene o per \textit{analogia} o per \textit{opposizione}.
+}
+
+%\subsection{Struttura dell'inferno}
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{./inferno.jpg}
+%\end{figure}
+
+\subsection{Struttura del testo}
+
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBGAXVJADcBDAGwFcYkQAdDnGADx2ABjemDyCAFjAC+IKaXSZc+QinIVqdJq3Zce-XMAAKzAE4Bzejggn8MuQux4CRNcQ0MWbRJ2588AgEkwADMYE0g7eRAMR2UXUgAmdy0vHz1-I3oTeigsOAhIhyVnFATSNxoPbW9dP2ByAGoAZiaAAmFRLELoxScVZDKqSpSdX35gFvaRPG6Y4v6ypOHPUfSJto6Z2Q0YKDN4IlBgkwgAWyQykCskABYaSRz2HAB3CAeoBHsQY7OkNSuIEgAKz3GCPbwvN5gj6yKI-c6IJo0a6IABsoPBV1e70+cJOCLIAL+X3hSEJKMuACMYGAoEgmsQSfiycjAYiaNTaUgALQMqSUKRAA
+\begin{center}
+\begin{tikzcd}
+    & \textit{Inferno} \arrow[r, two heads]    & \text{1+33 canti} \\
+    \text{Cantiche} \arrow[r] \arrow[ru, bend left] \arrow[rd, bend right] & \textit{Purgatorio} \arrow[r, two heads] & \text{33 canti}   \\
+    & \textit{Paradiso} \arrow[r, two heads]   & \text{33 canti}  
+\end{tikzcd}
+\end{center}
+
+\subsection{Lucifero}
+
+Lucifero viene rappresentato come un grande orrenda cretura con 3 bocche.
+In ogni bocca mastica per l'eternità i 3 peccatori più grandi.
+Al centro Giuda, mentre ai lati Bruto e Cassio.
+
+\pagebreak
+
+\subsection{Inferno, I, 1-12}
+
+\begin{center}
+    \textit{Nel mezzo del cammin di nostra vita} \\
+    \textit{mi ritrovai per una selva oscura,} \\
+    \textit{ché la diritta via era smarrita.}
+\end{center}
+
+la vita media è di 70 anni. Questo è un dato biblico e non il valore della vita media.
+Dante è nato nel 1265, per cui 1265+35=1300. Il percorso inizia infatti esattamente nel 1300.
+Questo dato viene anche confermato in \textit{Inferno XXI, 112-114}.
+
+\sdefinition{Giubileo}{
+    Il \textit{giubileo} è un anno di assoluzione collettica di peccati.
+}
+Questa data è quella del primo Giubileo, indetto dal Papa Bonifacio VIII.
+
+\sdefinition{Allegoria}{
+    Figura retorica per mezzo della quale l'autore esprime e il lettore ravvisa un significato riposto,
+    diverso da quello letterale.
+}
+La selva oscura, dove non vi è luce, rappresenta una condizione di peccato.
+La \textit{diritta via} è quella che conduce a Dio.
+Essa è smarrita, ma può essere appunto ritrovata.
+\\
+Dante non specifica il tipo di peccato, questo è dato dal fatto che Dante rappresenta allegoricamente
+l'interno dell'umanità (nel 1300), per cui il peccato di tutti gli uomini in quel periodo.
+
+\begin{center}
+    \textit{Ahi quanto a dir qual era è cosa dura} \\
+    \textit{esta selva \textbf{selvaggia} e \textbf{aspra} e \textbf{forte}} \\
+    \textit{che nel pensier rinova la paura!}
+\end{center}
+
+I tre aggettivi; selvaggia (disumano), aspra (fitta) e forte (da cui è difficile uscire)
+sono disposti a climax.
+
+\begin{center}
+    \textit{Tant' è amara che poco è più morte;} \\
+    \textit{ma per trattar del ben ch'i' vi trovai,} \\
+    \textit{dirò de l'altre cose ch'i' v'ho scorte.}
+\end{center}
+
+La morte, che è la cosa più terribile che ci sia, lo è solamente poco più della selva.
+\\
+I due verbi sui quali si chiude \textit{Vita Nova},
+\textbf{dire} e \textbf{trattare}, si ritrovano all'inizio della \textit{Commedia}.
+In \textit{Vita Nova} questi verbi si riferiscono all'io poetico, mentre all'inizio della \textit{Commedia}
+sono riferiti al \textbf{bene} e ad \textbf{altre cose}.
+Il bene si riferisce alla salvezza (Dio), mentre altre cose si riferisce a tutto ciò che trovò durante il viaggio.
+La parola \textit{vi} si riferisce probabilmente a tutto il viaggio compiuto da Dante.
+
+\begin{center}
+    \textit{Io non so ben ridir com' i' v'intrai,} \\
+    \textit{tant' era pien di sonno a quel punto} \\
+    \textit{che la verace via abbandonai.}
+\end{center}
+
+Il sonno rappresenta in senso allegorico il sonno della coscienza, che porta al peccato, ossia la selva.
+
+\snote{Funzioni di Dante}{
+    Date ha diverse funzioni che si intrecciano nel racconto.
+    \begin{itemize}
+        \item Dante personaggio, pellegrino che compie il viaggio
+        \item Dante allegoria per tutta l'umanità
+        \item Dante poeta fiorentino
+    \end{itemize}
+}
+
+\begin{center}
+    \textit{Ma poi ch'i' fui al piè d'un colle giunto,} \\
+    \textit{là dove terminava quella valle} \\
+    \textit{che m'avea di paura il cor compunto,}
+\end{center}
+
+\begin{center}
+    \textit{guardai in alto e vidi le sue spalle} \\
+    \textit{vestite già de' raggi del pianeta} \\
+    \textit{che mena dritto altrui per ogne calle.}
+\end{center}
+
+Le spalle del colle sono il punto in cui la collina si piega.
+Questa perifrasi indica semplicemente che la collina era illuminata dalla luce solare.
+In alto vi è la luce divina, mentre in basso c'è il buio del peccato.
+Il collo rappresenta infatti il percorso difficile; è molto più facile
+cadere all'inferno che giungere a Dio. \\
+Il gesto di guardare in alto indica un progressivo distaccarsi dal peccato.
+
+\begin{center}
+    \textit{Allor fu la paura un poco queta,} \\
+    \textit{che nel lago del cor m'era durata} \\
+    \textit{la notte ch'i' passai con tanta pieta.}
+\end{center}
+
+\begin{center}
+    \textit{E come quei che con \textbf{lena affannata},} \\
+    \textit{uscito fuor del pelago a la riva,} \\
+    \textit{si volge a l'acqua perigliosa e guata,}
+\end{center}
+
+% pelago = mare
+Il verbo \textbf{guatare} significa guardare con partecipazione, spesso paura.
+Questa similitudine mette in confronto un naufrago che scampa il pericolo dell'acqua,
+che come Dante scampa dalla selva e si gira a guardarla, con un sentimento di sollievo.
+Il corpo di Dante è fermo, ma il suo animo è ancora spaventato e vorrebbe continuare a scappare.
+
+Questo indica anche che indugiare nel peccato, come indugiare nella selva o nelle acque, porta alla morte.
+
+\begin{center}
+    \textit{così l'animo mio, ch'ancor fuggiva,} \\
+    \textit{si volse a retro a rimirar lo passo} \\
+    \textit{che non lasciò già mai persona viva.}
+\end{center}
+
+\begin{center}
+    \textit{Poi ch'èi posato un poco il corpo lasso,} \\
+    \textit{ripresi via per la piaggia diserta,} \\
+    \textit{sì che 'l piè fermo sempre era 'l più basso.}
+\end{center}
+
+La piaggia è un leggero pendio che non è ancora l'effettiva salita.
+\\
+Il terzo verso, dove un piede è sempre più basso dell'altro,
+implica che ci sia ancora una zavorra che lo mantenga vicino al peccato (alla selva).
+
+\begin{center}
+    \textit{Ed ecco, quasi al cominciar de l'erta,} \\
+    \textit{una lonza leggiera e presta molto,} \\
+    \textit{che di pel macolato era coverta;}
+\end{center}
+
+Dante incontra la prima delle tre fiere, la lonza.
+\sdefinition{Lussuria}{
+    La lussuria è un vizio inteso come l'abbandono alle proprie passioni o anche a divertimenti di natura generica, senza il controllo da parte della nostra ragione e della nostra morale.
+}
+La lonza è leggera (veloce, agile). Essa rappresenta infatti la lussuria.
+
+\begin{center}
+    \textit{e non mi si partia dinanzi al volto,} \\
+    \textit{anzi 'mpediva tanto il mio cammino,} \\
+    \textit{ch'i' fui per ritornar più volte vòlto.}
+\end{center}
+
+\begin{center}
+    \textit{Temp' era dal principio del mattino,} \\
+    \textit{e 'l sol montava 'n sù con quelle stelle} \\
+    \textit{ch'eran con lui quando l'amor divino}
+\end{center}
+
+Il tempo è il mattino, e la stazione è la primavera.
+Secondo la \textit{Genesi} il mondo è stato creato di primavera.
+
+\begin{center}
+    \textit{mosse di prima quelle cose belle;} \\
+    \textit{sì ch'a bene sperar m'era cagione} \\
+    \textit{di quella fiera a la gaetta pelle}
+\end{center}
+
+\begin{center}
+    \textit{l'ora del tempo e la dolce stagione;} \\
+    \textit{ma non sì che paura non mi desse} \\
+    \textit{la vista che m'apparve d'un leone.}
+\end{center}
+
+Dante ritrova speranza penso che il mattino di primavery sia un momento propizio di inizio.
+\\
+Dante incontro la seconda delle fiere, il leone.
+
+\begin{center}
+    \textit{Questi parea che contra me venisse} \\
+    \textit{con la test' alta e con rabbiosa fame,} \\
+    \textit{sì che parea che l'aere ne tremesse.}
+\end{center}
+
+\sdefinition{Superbia}{
+    Radicata convinzione della propria superiorità (reale o presunta) che si traduce in atteggiamenti di orgoglioso distacco o anche di ostentato disprezzo verso gli altr
+}
+Il leone rappresenta la superbia.
+
+\begin{center}
+    \textit{Ed una lupa, che di tutte brame} \\
+    \textit{sembiava carca ne la sua magrezza,} \\
+    \textit{e molte genti fé già viver grame,}
+\end{center}
+
+Immediatamente Date incontro anche la terza fiera, la lupa.
+\sdefinition{Avarizia (antica)}{
+    La brama di possessi materialistici.
+}
+La lupa è molto magra. Essa rappresenta l'avariazia, la fame insaziabile e la brama di possessi materiali.
+
+\begin{center}
+    \textit{questa mi porse tanto di gravezza} \\
+    \textit{con la paura ch'uscia di sua vista,} \\
+    \textit{ch'io perdei la speranza de l'altezza.}
+\end{center}
+
+Questa gravezza (peso) simboleggia il ritorno verso la sede, perdendo la speranza di salire.
+
+\snote{Alternarsi della speranza}{
+    Dante viene attraversato da un continuo alternarsi fra speranza e disperazione.
+}
+
+%\begin{center}
+%    \textit{E qual è quei che volontieri acquista,} \\
+%    \textit{e giugne 'l tempo che perder lo face,} \\
+%    \textit{che 'n tutti suoi pensier piange e s'attrista;}
+%\end{center}
 
 \pagebreak
 
@@ -211,6 +493,6 @@ L'analisi di un testo viene separata nell'\textit{analisi metrica} e nell'\texti
 
 \paragraph{Analisi}
 
-% perifrasi = giro di parole
+Perifrasi = giro di parole
 
 \end{document}
