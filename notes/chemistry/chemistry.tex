@@ -8,6 +8,9 @@
 \usepackage{bettelini}
 \usepackage{stellar}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{makecell}
 \usepackage[backend=bibtex]{biblatex}
 
 \hypersetup{
@@ -124,6 +127,72 @@ Nelle trasformazioni fisiche, la materia mantiene le sue proprietà e rimane inv
         \item Dissoluzione dello zucchero nell'acqua.
     \end{itemize}
 }
+
+\pagebreak
+
+\section{Classificazione}
+
+\sdefinition{Sostanza pura elementare}{
+    Una \textit{sostanza pura elementare} è composta da un solo tipo di elemento.
+}
+
+\sdefinition{Sostanza pura composta}{
+    Una \textit{sostanza pura composta} è composta da un solo tipo di composto.
+}
+
+\sdefinition{Soluzione}{
+    Una \textit{soluzione} è una sostanza composta da diversi tipi di composti
+    in maniera omogenea.
+}
+
+\sexample{Sostanza pura composta}{
+    Acqua (\(H_2O\))
+}
+
+\sexample{Sostanza pura elementare}{
+    Azoto (\(N\))
+}
+
+\sexample{Soluzione}{
+    \(50\% N + 50\% H_2\)
+}
+
+\begin{center}
+    \begin{tikzpicture}[
+        level 1/.style = {sibling distance = 5cm},
+        level 2/.style = {sibling distance = 2.5cm}
+    ]
+    \node {\doublebox{Materia}}
+        child {
+            node {\fbox{Eterogenea}}
+        }
+        child {
+            node {\fbox{Omogenea}}
+            child {
+                node {\fbox{Soluzione}}
+            }
+            child {
+                node {\fbox{Sostanza pura}}
+                child {
+                    node {\ovalbox{Elementi}}
+                }
+                child {
+                    node {\ovalbox{Composti}}
+                }
+            }
+        };
+    \end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+    \item La materia può essere classificata come materia \textit{eterogenea}
+    e materia \textit{omogenea}.
+    
+    \item La materia omogenea può essere classificata come \textit{miscuglio omogeneo} (soluzione)
+    oppure come \textit{sostanza pura}.
+    
+    \item Le sostanze pure possono essere classificati come \textit{elementi} oppure \textit{composti}.
+\end{itemize}
 
 \pagebreak
 
