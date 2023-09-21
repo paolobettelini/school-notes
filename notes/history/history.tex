@@ -8,6 +8,9 @@
 \usepackage{xcolor}
 \usepackage{stellar}
 \usepackage{chronology}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{makecell}
 
 \hypersetup{
     colorlinks=true,
@@ -267,6 +270,43 @@ Vi sono principalmente tre fattori che hanno procurato il passaggio da monarchia
     Inoltre, si è assistito a un cambiamento nella politica estera con l'organizzazione della prima diplomazia permanente, contrariamente al Medioevo in cui le relazioni internazionali erano meno strutturate. Questo cambiamento ha portato all'idea di equilibrio di potere tra gli Stati europei.
     \item
     Oltre all'esercito e alla diplomazia, la burocrazia statale è emersa come elemento chiave, con una crescente potenza degli "ufficiali"/funzionari del sovrano. In questo periodo, lo Stato si è concentrato attorno al potere sovrano e alla gerarchia degli ufficiali, piuttosto che sugli "ordini" della nazione o gli Stati generali.
+    Vendita della cariche.
 \end{itemize}
+
+Questi processi mirano i ridurre il potere dei feudali ed aumentare quello del sovrano.
+
+Nel 1685 Luigi XIV comanda tutti gli Ugonotti di convertirsi al cristianesimo creando
+un'uniformità religiosa.
+
+Il Re diventato lo Stato sotto tutti gli effetti.
+
+\subsection{La Società dell'Antico Regine}
+
+
+\begin{center}
+    \begin{tikzpicture}[
+        level 1/.style = {sibling distance = 5cm},
+        level 2/.style = {sibling distance = 2.5cm}
+    ]
+    \node {\doublebox{Società Antico Regime}}
+        child {
+            node {\fbox{Terzo stato}}
+        }
+        child {
+            node {\fbox{Nobiltà}}
+        }
+        child {
+            node {\fbox{Clero}}
+            child {
+                node {\fbox{Alto Clero}}
+            }
+            child {
+                node {\fbox{Basso Clero}}
+            }
+        };
+    \end{tikzpicture}
+\end{center}
+
+Non si può accedere al clero per nascita.
 
 \end{document}
