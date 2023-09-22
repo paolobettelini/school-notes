@@ -9,6 +9,8 @@
 \usepackage{stellar}
 \usepackage{bettelini}
 \usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{makecell}
 
 \usetikzlibrary{cd}
 
@@ -16,11 +18,11 @@
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue,
-    pdftitle={geografia},
+    pdftitle={Geografia},
     pdfpagemode=FullScreen,
 }
 
-\title{geografia}
+\title{Geografia}
 \author{Paolo Bettelini}
 \date{}
 
@@ -90,6 +92,21 @@ Eventi che sono all'apparenza locali possono avere grandi effetti in crisi di sc
     Un \textit{secolo} può essere definito in mainera stretta come 100 anni,
     oppure come un periodo di circa 100 anni con caratteristiche omogenee.
 }
+
+\section{USA vs URSS}
+
+\sdefinition{NATO}{
+    La \textit{NATO} (North Atlantic Treaty Organization) è un associazione di sicurezza composta dsa diverse nazioni.
+}
+
+\begin{center}
+    \begin{tikzcd}
+        \fbox{\textbf{USA}}               & \textit{differenze}                       & \fbox{\textbf{URSS}}               \\
+        \text{Democrazia}          & \ovalbox{\textbf{Politiche}} \arrow[r] \arrow[l]  & \text{Autocrazia}           \\
+        \text{Economia di mercato} & \ovalbox{\textbf{Economiche}} \arrow[r] \arrow[l] & \text{Economia pianificata} \\
+        \text{NATO}                & \ovalbox{\textbf{Militari}} \arrow[r] \arrow[l]   & \text{Patto di Varsavia}   
+    \end{tikzcd}
+\end{center}
 
 % https://moodle.edu.ti.ch/libe/pluginfile.php/114669/mod_resource/content/0/Presentazione%20Secolo%20breve.pdf
 
