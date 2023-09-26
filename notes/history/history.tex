@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{fancybox}
 \usepackage{makecell}
+\usepackage{bettelini}
 
 \hypersetup{
     colorlinks=true,
@@ -282,31 +283,100 @@ Il Re diventato lo Stato sotto tutti gli effetti.
 
 \subsection{La Società dell'Antico Regine}
 
-
 \begin{center}
     \begin{tikzpicture}[
         level 1/.style = {sibling distance = 5cm},
-        level 2/.style = {sibling distance = 2.5cm}
+        level 2/.style = {sibling distance = 2cm}
     ]
     \node {\doublebox{Società Antico Regime}}
         child {
             node {\fbox{Terzo stato}}
+            child {
+                node {\fbox{Borghesia}}
+            }
+            child {
+                node {\fbox{\makecell[c]{Poveri, \\ emarginati}}}
+            }
+            child {
+                node {\fbox{\makecell[c]{Contadini, \\ artigiani}}}
+            }
         }
         child {
             node {\fbox{Nobiltà}}
+            child {
+                node {\fbox{di Toga}}
+            }
+            child {
+                node {\fbox{di Spada}}
+            }
         }
         child {
             node {\fbox{Clero}}
             child {
-                node {\fbox{Alto Clero}}
+                node {\fbox{\makecell[c]{Alto \\ Clero}}}
             }
             child {
-                node {\fbox{Basso Clero}}
+                node {\fbox{\makecell[c]{Basso \\ Clero}}}
             }
         };
     \end{tikzpicture}
 \end{center}
 
 Non si può accedere al clero per nascita.
+Le tasse appartengono unicamente a quelli appartenenti al terzo stato.
+Non vi è libertà di pensiero, culto o parola.
+
+Questo tipo di società è divisa per discendenza eccetto per il Clero.
+Il primo genito di una famiglia nobiliare eredita spesso le varie terre, mentre il secondo genito
+andrà a fare parte dell'Alto Clero, mentre il Basso Clero è principalmente occupato dalla Borghesia.
+
+\subsection{Fallimento dell'accentramento monarchico in Inghilterra}
+
+Carlo I Stuart fu il primo sovrano decapitato dal popolo.
+Il parlamento in inghilterra non si fa scavalcare, e i sovrani, a differenza di quelli francesi,
+non riescono così tanto a centralizzare il potere.
+Il parlamento si ribella e obbliga i nuovi sovrani di firmare il "Bill of rights".
+
+\sdefinition{Bill of Rights}{
+    Il parlamento impone (non chiede) al sovrano di essere riconosciuto.
+}
+
+\begin{itemize}
+    \item Il potere limtiato dal re;
+    \item un parlamento rappresentativo dotato del monopolio legislativo;
+    \item sistenza giudiziario a garanzia dell'integrità delle persone e di alcuni diritti indivuduali
+\end{itemize}
+
+Alcuni elementi per essere uno Stato moderno sono assenti, il potere non è infatti centralizzato.
+Tuttavia, è uno Stato Moderno perché riconosce i diritti individuali nei confronti del potere dello Stato.
+Seppur limitato, il otere del sovrano viene esercitato in modo uniforme su tutti i sudditi e su tutto il territorio.
+
+Il potere statuale non è più concentrato, bensì ripartito tra figure diverse:
+\begin{itemize}
+    \item il re possiede il potere esecutivo;
+    \item il parlamento ha potere legislativo;
+    \item giudici hanno potere giudiziario.
+\end{itemize}
+
+% TODO stato liberale rappresentativo e le costituzioni
+% TODO differenza fra monarchia costituzionale e parlamentare
+
+\subsection{Illuminismo}
+
+\sdefinition{Illuminismo}{
+    L'\textit{illuminismo} è una corrente di pensieri anche nominata l'età dei lumi.
+    La luce alla quale si fa riferimento è in diretta contrapposizione
+    al medioevo e diverse concezioni dell'Antico Regime, ossia, all'ignoranza.
+}
+
+\sdefinition{Giusnaturalismo}{
+    Il \textit{giusnaturalismo} è corrente filosofica giuridica, fondata su due principi:
+    \begin{itemize}
+        \item esiste un diritto naturale (conforme cioè alla natura dell'uomo e quindi intrinsecamente corretto);
+        \item è superiore al diritto positivo (diritto prodotto dagli uomini).
+    \end{itemize}
+}
+
+Esistono norme di diritto naturale che hanno per oggetto la tutela della vita, della libertà e della proprietà.
 
 \end{document}
