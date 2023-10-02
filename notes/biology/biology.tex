@@ -7,6 +7,11 @@
 \usepackage{hyperref}
 \usepackage{stellar}
 \usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{makecell}
+
+\usetikzlibrary{cd}
 
 \hypersetup{
     colorlinks=true,
@@ -429,18 +434,23 @@ Le molecole grandi e ioni non passano per i fosfolipidi senza un canale (diffusi
 % grandiente elttrochimico con polarità
 
 \sdefinition{Trasporto attivo primario}{
-    Il trasporto attivo primario è un trasporto grazie ad un trasportatore e all'ATP.
+    Il \textit{trasporto attivo primario} è un trasporto grazie ad un trasportatore e all'ATP.
 }
 
 Se non viene utilizzata direttamente l'ATP,
 bensì viene sfruttata la differenza di gradiente di concentrazione stabilita da un trasporto primario,
 si parla di trasporto \textit{secondario}.
 
-% TODO secondario /? uniporto simporto antiproto
+\sdefinition{Trasporto secondario}{
+    Il \textit{trasporto secondario} sfrutta il gradiente di concentrazione per trasportare
+    senza costo.
+}
 
-% attivo primario con ATP trasporta sostaznza contro gradiente
-
-% TODO osmosi
+\begin{itemize}
+    \item \textbf{Uniporto:} consente il passaggio di un solo ione o molecola in un'unica direzione.
+    \item \textbf{Antiporto:} consente il passaggio contemporaneo ma in direzioni opposte di due ioni e/o molecole differenti2
+    \item \textbf{Simporto:} consente il passaggio contemporaneo ma nella stessa direzione di due ioni e/o molecole differenti.
+\end{itemize}
 
 \subsection{Trasporto vescicolare}
 
@@ -448,6 +458,58 @@ Quando le molecole sono troppo grandi (es. proteine intere) per passare per un c
 mediante una \textit{vescicola di trasporto}. Il processo di entrata si chiama \textit{endocitosi},
 mediante quello di uscita si chaima \textit{esocitosi}. 
 In questa \href{https://youtu.be/uYpNUw7vPO4}{illustrazione} il colore blu rappresenta il contenuto di un organello.
+
+\pagebreak
+
+\subsection{Glucotrasportatori di membrana (Glut4)}
+
+Gli enterociti prendono il glucosio e il Na\({}^+\) dal lume intestinale
+e li trasportano fino al sangue grazie a un simporto Na\({}^+\)/glucosio, una glucosio permeasi
+(una proteina per la diffusione facilitata del glucosio), e la Na\({}^+\)/K\({}^+\)ATPasi. 
+
+\sdefinition{Endocitosi}{
+    L'\textit{encodictosi} è un processo che le cellule utilizzano per l'assunzione di sostanze presenti nell'ambiente extracellulare o aderenti alla membrana della cellula stessa.
+}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{./glut4.png}
+\end{figure}
+
+I Glut4 verranno inseriti nella cellula quando il sangue è pieno di glucosio (quando la \textit{glicemia} è alta).
+È necessario che la cellula risponda alla alta glicemia nel sangue per produrre i Glut4,
+questo messaggio viene spedito attraverso il sangue con l'\textit{insulina}.
+L'insulina lega il ricettore, cambiandone la struttura. \\
+L'insulina viene prodotta dal pancreas, infatti, le cellule del pancreas sono in grado di misurare la glicemia.
+    
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./insulin.png}
+\end{figure}
+
+Il diabete è un problema nella ricezione dell'insulina.
+
+\sdefinition{Omeostasi}{
+    L'\textit{omeostasi} è il processo di autoregolazione dei vari valori.
+}
+
+Il seguente diagramma illustra un esempio di omeostasi per la regolazione della glicemia nel sangue.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./omeostasi.png}
+\end{figure}
+
+\pagebreak
+
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZAFgBoBGAXVJADcBDAGwFcYkQAdDnGADxwBGAM2ABBHHloQAviGml0mXPkIoAbBWp0mrdlx79hwAAr042KbPmLseAkQDMpAExaGLNok7c+OEwCcsAFt6QIgAAgAKUQAVYwBKKwUQDFsVIgBWFzcdT28DPwBlGABjAihQ-CSbZXsUMgccjz0ffmAAVTAsDH8cGTlk1NrVZCzGmnddL31fYELgnr7qlKU7EY1x7Wbp1r9RMDxF-usVtLrkDWImqZABmrXM0iuJ3PY70+GiMmetm-ehh4oAAcmhe23yswAIlghEJmNgCDBlgD0igAJzZME3GZtYpBNCMLAlJH-Vao5AAdkxvzyOL8ADF6CUsIScPQ2ciyecqZtJrTdsASvQwEwsJyziMMbzXjsCsAgjAggJ-ML6OLPvVSAAGa78gpGGIquCLdkQQLqwHIZygmktfUiABq8GZZUYoRJJxR53I2t1dtmAFEwFAIMy+tgLeSfa4sXrA3BQ7glJHzlqbXz-W0AOIq4NYcJofwQHhYMAewZckY+6Xgum4YABuAAOnC0nCdOAWZYOGIVi0MCgAHN4ERQEIi0EkGmQH0kM4TuOIJPENPZ4gHAuJ0gnDOIEhe8lF8ud2uMpul9uaGu1Ofl1ld-uaAIYMH9xjbbLZnBx8wJGr3keSAaA+iBUiAz6vogAC0DhareSBgdeT4vlASAwXBh5bog95riCICEmW7AhswAiMGwNAABYwPQqGIGAzCMIwV70Cy7CQIR8GIGQIFopx5CrnuiDkOQfECUg5DzphF5CdaIHkBuUnLsJV6CeQB5jlh5A4YJ05us+jDGJW7CBIOFE4CAsaZn4ADCBA4EW4Q5jRWAvjwyyAUJ2nichkGwZZn5tMYMD+I5KpQC5BwkjQekwAZRleCZZkAZpXlCcBEG0ehfHAWu5AUtlKniUCfHvrlwEEXkFRwFRqHMaxXhsqxlHUbRM4AO4QFRNEIJxzhiWlPmZX5+GlpVxY8LV+H0PphkSuwpbYLAFkfhChgiGgZgWMcineXJcGUNIQA
+%\begin{tikzcd}
+%    & \text{Endocitosi}                                                                          &                                            &                       & \textbf{Trasportatori} \arrow[d, "\text{Contro Gradiente}"'] \arrow[rrd, "\text{Per Gradiente}"', bend left] \arrow[lld, bend right] &                                                                                 &                                        &                             &                                         &                           \\
+%\text{Grandi proteine} \arrow[rr, two heads, dashed, tail] &                                                                                            & \textbf{Vescicolare} \arrow[lu] \arrow[ld] &                       & \textbf{Attivo} \arrow[ld] \arrow[rd]                                                                                                &                                                                                 & \textbf{Passivo} \arrow[rr]            &                             & \text{Diffusione} \arrow[rd] \arrow[ld] &                           \\
+%    & \text{Esocitosi}                                                                           &                                            & \text{Primario (ATP)} &                                                                                                                                      & \text{Secondario} \arrow[ld] \arrow[d] \arrow[rd]                               &                                        & \text{Facilitata} \arrow[d] &                                         & \text{Semplice} \arrow[d] \\
+%    & \textit{Es. } \text{Glut4} \arrow[ruu, "\textbf{passivo}" description, dotted, bend right] &                                            &                       & \text{Uniporto} \arrow[d]                                                                                                            & \text{Simporto} \arrow[l, "\text{sfrutta}", bend left=49] \arrow[d, Rightarrow] & \text{Antiporto} \arrow[d, bend right] & \text{canali}               &                                         & \text{membrana}           \\
+%    &                                                                                            &                                            &                       & {}                                                                                                                                   & {}                                                                              & {} \arrow[u, bend right]               &                             &                                         &                          
+%\end{tikzcd}
 
 % TODO Pompa sodio-potassio porta fuori sodia e dento potassio (crea un gradiente), esempio di trasporto attivo primario
 
