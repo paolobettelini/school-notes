@@ -6,14 +6,6 @@
 \RequirePackage{url}
 \RequirePackage[most]{tcolorbox}
 
-\ExplSyntaxOn
-\DeclareDocumentCommand{\snippetref}{d[] d[]}{%
-    \IfNoValueTF { #2 }
-    { \href{/snippet/#1}{#1} }
-    { \href{/snippet/#1}{#2} }
-}
-\ExplSyntaxOff
-
 %%%%%%%%%% Colored sentences commands %%%%%%%%%%
 % Adapted from
 % https://github.com/SeniorMars/dotfiles/blob/master/latex_template/preamble.tex
@@ -55,14 +47,14 @@
 \definecolor{notebg}{HTML}{e6e6e6}
 \definecolor{notefr}{HTML}{6f6f6f}
 
-\customsentence{Theorem}{Theorem}{theorembg}{theoremfr}
-\customsentence{Corollary}{Corollary}{corollarybg}{corollaryfr}
+\customsentence{Theorem}{Teorema}{theorembg}{theoremfr}
+\customsentence{Corollary}{Corollario}{corollarybg}{corollaryfr}
 \customsentence{Lemma}{Lemma}{lemmabg}{lemmafr}
 \customsentence{Proposition}{Proposition}{propositionbg}{propositionfr}
-\customsentence{Example}{Example}{examplebg}{examplefr}
-\customsentence{Note}{Note}{notebg}{notefr}
-\customsentence{Definition}{Definition}{definitionbg}{definitionfr}
-\customsentence{Axiom}{Axiom}{definitionbg}{definitionfr}
+\customsentence{Example}{Esempio}{examplebg}{examplefr}
+\customsentence{Note}{Nota}{notebg}{notefr}
+\customsentence{Definition}{Definizione}{definitionbg}{definitionfr}
+\customsentence{Axiom}{Assioma}{definitionbg}{definitionfr}
 
 \newcommand{\stheorem}[2]{\begin{Theorem}{#1}{}#2\end{Theorem}}
 \newcommand{\scorollary}[2]{\begin{Corollary}{#1}{}#2\end{Corollary}}
