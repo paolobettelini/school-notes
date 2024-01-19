@@ -5,6 +5,7 @@
 \usepackage{parskip}
 \usepackage{fullpage}
 \usepackage{hyperref}
+\usepackage{stellar}
 
 \hypersetup{
     colorlinks=true,
@@ -23,23 +24,23 @@
 \maketitle
 \tableofcontents
 
-\section{Grandezze fisiche}
+\section{Forze}
 
-\begin{center}
-    \bgroup{}
-    \def\arraystretch{1.25}
-    \begin{tabular}{ |c|c|c|c| }
-        \hline
-        \textbf{Grandezza fisica} & \textbf{Definizioe} & \textbf{Misurazione} & \textbf{Unità} \\
-        \hline
-        \textbf{Massa} & Quantità di materia & Con una bilancia & \(Kg\) \\
-        \hline
-        \textbf{Peso} & Espressione di massa soggetta ad accelerazione & Con un dinamometro & \(N\) \\
-        \hline
-        \textbf{Volume} & Spazio tridimensionale occupato da una massa & XX & \(\frac{m^3}{Kg}\) \\
-        \hline
-    \end{tabular}
-    \egroup{}
-\end{center}
+\sdefinition{Costante di Coulomb}{
+    La \textit{costante di Coulomb} è data da
+    \[
+        k = 9 \cdot 10^9 \frac{N \cdot m^2}{C^2} 
+    \]
+    dove \(C\) è l'unità di misura della carica elettrictà.
+}
+
+\sdefinition{Forza di Coulomb}{
+    La \textit{forza di Coulomb} è la forze con la quale due cariche elettriche ferme,
+    \(q_1\) e \(q_2\), a distanza \(r\), si attraggono
+    \[
+        F_Q = k \frac{q_1 q_2}{r^2}
+    \]
+    dove \(k\) è la costante di Coulomb.
+}
 
 \end{document}
