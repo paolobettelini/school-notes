@@ -34,6 +34,8 @@
 
 \definecolor{theorembg}{HTML}{F2F2F9}
 \definecolor{theoremfr}{HTML}{00007B}
+\definecolor{personbg}{HTML}{F2F2F9}
+\definecolor{personfr}{HTML}{00007B}
 \definecolor{lemmabg}{HTML}{FFFAF8}
 \definecolor{lemmafr}{HTML}{983b0f}
 \definecolor{propositionbg}{HTML}{f2fbfc}
@@ -48,6 +50,7 @@
 \definecolor{notefr}{HTML}{6f6f6f}
 
 \customsentence{Theorem}{Teorema}{theorembg}{theoremfr}
+\customsentence{Person}{Persona}{personbg}{personfr}
 \customsentence{Corollary}{Corollario}{corollarybg}{corollaryfr}
 \customsentence{Exercise}{Esercizio}{lemmabg}{lemmafr}
 \customsentence{Proposition}{Proposition}{propositionbg}{propositionfr}
@@ -57,6 +60,7 @@
 \customsentence{Axiom}{Assioma}{definitionbg}{definitionfr}
 
 \newcommand{\stheorem}[2]{\begin{Theorem}{#1}{}#2\end{Theorem}}
+\newcommand{\sperson}[2]{\begin{Person}{#1}{}#2\end{Person}}
 \newcommand{\scorollary}[2]{\begin{Corollary}{#1}{}#2\end{Corollary}}
 \newcommand{\sexercise}[2]{\begin{Exercise}{#1}{}#2\end{Exercise}}
 \newcommand{\sproposition}[2]{\begin{Proposition}{#1}{}#2\end{Proposition}}
