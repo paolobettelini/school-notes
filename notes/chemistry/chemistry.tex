@@ -413,33 +413,91 @@ OH stands for hydroxide ion, which is a negatively charged molecule consisting o
 
 \section{Redox}
 
-\subsection{Definition}
+\subsection{Definizione}
 
-Redox (reduction-oxidation) reactions are a chemical reaction in which electrons are transferred between two reactants participating in it.
-A redox reaction involves a change in the oxidation state of one or more atoms.
-Whoever loses electrons is oxidized, whilst whoever gains electrons is reduced.
+\sdefinition{Reazione di ossidoriduzione} {
+    Le reazioni di \textit{ossidoriduzione} (\textit{redox}) sono una reazione chimica in cui gli elettroni
+    vengono trasferiti tra due reagenti che vi partecipano.
+    Le reazioni di ossidoriduzione sono composte da un
+    \begin{itemize}
+        \item \textit{agente riducente:} la sostanza che si ossida donando elettroni;
+        \item \textit{agente ossidante:} la sostanza ossida prendendo elettroni.
+    \end{itemize}
+}
 
-\subsection{Oxidation State}
+Una reazione redox comporta un cambiamento nello stato di ossidazione di uno o più atomi.
 
-The oxidation state or odixation number of an atom in a molecule represents its ability to lose or gain electrons in a chemical reaction. In a neutral molecule, the sum of the oxidation states of all atoms is always equal to zero. This means that the sum of the electrons lost by some atoms is equal to the sum of the electrons gained by other atoms.
+\subsection{Numeri di ossidazione}
+
+\sdefinition{Numero di ossidazione}{
+    Il \textit{numero di ossidazione} è la carica elettrica virtuale che si può
+    attribuire a un atomo o a uno ione impegnato in un legame chimico,
+    immaginando di spostare tutti gli elettroni del legame sull'atomo più elettronegativo.
+}
+
+Lo stato di ossidazione o numero di ossidazione di un atomo in una molecola rappresenta la sua capacità di perdere o guadagnare
+elettroni in una reazione chimica. In una molecola neutra, la somma degli stati di ossidazione di tutti gli atomi è
+sempre uguale a zero. Ciò significa che la somma degli elettroni persi da alcuni atomi è uguale alla somma
+degli elettroni acquistati da altri atomi. In una molecola ha l'atomo con la più alta elettronegatività
+sempre il numero di ossidazione negativo.
 
 \begin{enumerate}
-    \item Individual elements always have an oxidation number of \(0\).
-    \item Monoatomic ions always have an oxidation number of \(0\).
-    \item Hydrogen (\textit{almost}) always has an oxidation number of \(+1\).
-    \item Oxygen (\textit{almost}) always has an oxidation number of \(-2\).
+    \item Elementi singoli e liberi hanno sempre un numero di ossidazione di \(0\);
+    \item ioni monoatomici hanno sempre un numero di ossidazione pari alla propria carica;
+    \item il fluoro ha sempre numero di ossidazione di \(-1\) essendo il più elettronegativo;
+    \item la somma di tutti i numeri di ossidazione degli atomi in una molecola deve essere
+        uguale alla carica della particella;
+    \item l'idrogeno ha numero di ossidazione \(+1\) nei composti con i non metalli e \(-1\)
+        nei composti con i metalli;
+    \item l'ossigeno ha quasi sempre un numero di ossidazione di \(-2\), \(-1\) per i perossidi;
+    \item i metalli dei gruppi I e II hannno rispetivamente numeri di ossidazione di \(+1\) e \(+2\);
+    \item gli alogeni hanno numero di ossidazione \(-1\) nei composti con i metalli e un numero di ossidazione
+        positivo quando si legano a \(O\) o \(F\).
 \end{enumerate}
 
-If the oxidation state increases, the molecule oxidises (loses electrons). \\
-If the oxidation state decreases, the molecule reduces (gains electrons).
-
-\subsection{Spontaneous reactions}
-
-A reaction is \textit{spontaneous} if it proceeds spontaneously.
-
 %i metalli dei primi gruppi tendono a cedere i propri elettroni esterni OSSIDANDOSI;
-
 %i non metalli, molto elettronegativi, acquistano invece elettroni, RIDUCENDOSI;
+
+Se lo stato di ossidazione aumenta, la molecola si ossida (perde elettroni). \\
+Se lo stato di ossidazione diminuisce, la molecola si riduce (acquista elettroni).
+
+
+\subsection{Reazione spontanea}
+
+\sdefinition{Reazione spontanea}{
+    Una reazione è \textit{spontanea} se procede spontaneamentes.
+}
+
+\subsection{Esercizi}
+
+\sexercise{Trova il numero di ossidazione}{
+    \begin{align*}
+        &\,\bullet \text{NaCLO}_3 & +1, +5, -2 &&&&&&\\
+        &\,\bullet \text{SnCL}_4 & +4, -1 &&&&&&\\
+        &\,\bullet \text{MnO}_4^{2-} & +6, -2 &&&&&&\\
+        &\,\bullet \text{MnO}_2 & +4, -2 &&&&&&\\
+        &\,\bullet \text{H}_2\text{O}_2 & 1, -1&&&&&&
+    \end{align*}
+    L'idrogeno ha solo un elettrone, per cui il numero di ossidazione dell'ossigeno deve essere
+    ridotto.
+}
+
+\sexercise{la combustione del metano è una reazione di ossidoriduzione?}{
+    La reazione
+    \[ \text{CH}_4 + \text{O}_2 \rightarrow \text{CH}_2 + \text{H}_2\text{O} \]
+    ha numeri di ossidazione
+    \begin{align*}
+        &\,\bullet \text{CH}_4 & -4,+1 &&&&&&\\
+        &\,\bullet \text{O}_2 & 0 &&&&&&\\
+        &\,\bullet \text{CH}_2 & -2,+1 &&&&&&\\
+        &\,\bullet \text{H}_2\text{O} & +1,-2&&&&&&
+    \end{align*}
+}
+
+% DImostrare che la combustione  del metano  (CH_4) è una redox.
+
+% O2 -> O has number 0
+% H2O2 -> O has number -1
 
 \pagebreak
 
@@ -688,12 +746,6 @@ Nell'equilibrio \textit{dinamico} le molecole continuano costantemente a
 cambiare, e la velocità di reazione diretta diventa quella di reazione indiretta.
 Nell'\textit{equilibrio statico} le reazioni si fermano.
 
-\sdefinition{Principio di Le Chatelier}{
-    Secondo \textit{principio di Le Chatelier},
-    ogni sistema tende a reagire ad una perturbazione impostagli
-    dall'esterno minimizzandone gli effetti.
-}
-
 % TODO: 2 reagenti e un prodotto. Possiamo cmq avere una regione di equilibrio
 % Osserviamo che l'andamento di crescita e di diminuzione
 % non è più speculare. Se ce ne sono solo 2 è speculare.
@@ -768,6 +820,35 @@ I modi per aumentare la concentrazione di un prodotto sono:
 
 Il catalizzatore non aumenta la concentrazione di un prodotto, bensì solo la concentrazione.
 La temperatura è l'unico fattore al quale cambia la costante \(K\).
+
+\pagebreak
+
+\subsection{Principio di Le Chatelier}
+
+\sdefinition{Principio di Le Chatelier}{
+    Secondo \textit{principio di Le Chatelier},
+    ogni sistema tende a reagire ad una perturbazione impostagli
+    dall'esterno minimizzandone gli effetti.
+}
+
+\sexercise{Spiega l'effetto ottenuto sull'equilibrio da una reazione}{
+    \[ O_{2(\text{g})} + N_{2(\text{g})} \rightleftharpoons 2NO_{2(\text{g})} \]
+    \begin{itemize}
+        \item \textbf{aumento della temperatura:}
+            se la reazione diretta è endotermica, scaldare favorirà la produzione di prodotti,
+            mentre se la reazione è esotermica, raffreddare favorirà la formazione di prodotti;
+        \item \textbf{diminuzione della pressione:}
+            ci sono due moli di gas sia a destra che a sinistra, per cui non abbiamo nessun influsso.
+        \item \textbf{aumento della concentrazione di ossigeno:}
+            viene favorita la produzione di prodotti (spostamento verso destra);
+        \item \textbf{diminuzione pressione parziale di N\({}_2\):}
+            viene diminuita la concentrazione di azoto, e per cui avremo meno prodotti;
+        \item \textbf{aumento della concentrazione NO:}
+            aumentano i reagenti (viene favorita la reazione inversa);
+        \item \textbf{presenza di un catalizzatore:}
+            l'equilibrio non cambia.
+    \end{itemize}
+}
 
 \pagebreak
 
